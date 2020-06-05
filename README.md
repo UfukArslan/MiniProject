@@ -1,0 +1,2 @@
+# MiniProject
+Enterprise ontology
