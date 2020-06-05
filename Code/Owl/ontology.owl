@@ -1,0 +1,825 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ufuk/ontologies/2020/4/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ufuk/ontologies/2020/4/untitled-ontology-11">
+    <Prefix name="" IRI="http://www.semanticweb.org/ufuk/ontologies/2020/4/untitled-ontology-11"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Contract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Departement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeterminingCost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organzation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostalAdress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technologies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#calculates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#method"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responsible"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#site"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#state"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#use"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#workFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#workOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#currencie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#market"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#postalCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#secteurs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#software"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#step"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#total"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#version"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Autocad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeforeProject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#David"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Environnement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Execution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fribourg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Genève"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LesPillettes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Léchelles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarketPrivate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarketPublic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mathieu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nyon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Olivia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Price1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Price2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Revit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Structure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TourEsplanade"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Departement"/>
+        <Class IRI="#Organzation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectManager"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Technologies"/>
+        <NamedIndividual IRI="#Autocad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Phase"/>
+        <NamedIndividual IRI="#BeforeProject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectManager"/>
+        <NamedIndividual IRI="#David"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Departement"/>
+        <NamedIndividual IRI="#Environnement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Phase"/>
+        <NamedIndividual IRI="#Execution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostalAdress"/>
+        <NamedIndividual IRI="#Fribourg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostalAdress"/>
+        <NamedIndividual IRI="#Genève"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Project"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostalAdress"/>
+        <NamedIndividual IRI="#Léchelles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Contract"/>
+        <NamedIndividual IRI="#MarketPrivate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Contract"/>
+        <NamedIndividual IRI="#MarketPublic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engineer"/>
+        <NamedIndividual IRI="#Mathieu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostalAdress"/>
+        <NamedIndividual IRI="#Nyon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engineer"/>
+        <NamedIndividual IRI="#Olivia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectManager"/>
+        <NamedIndividual IRI="#Piero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeterminingCost"/>
+        <NamedIndividual IRI="#Price1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeterminingCost"/>
+        <NamedIndividual IRI="#Price2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Technologies"/>
+        <NamedIndividual IRI="#Revit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Departement"/>
+        <NamedIndividual IRI="#Structure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Project"/>
+        <NamedIndividual IRI="#TourEsplanade"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lives"/>
+        <NamedIndividual IRI="#David"/>
+        <NamedIndividual IRI="#Genève"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#responsible"/>
+        <NamedIndividual IRI="#David"/>
+        <NamedIndividual IRI="#Environnement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#conduct"/>
+        <NamedIndividual IRI="#Environnement"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located"/>
+        <NamedIndividual IRI="#Environnement"/>
+        <NamedIndividual IRI="#Nyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#method"/>
+        <NamedIndividual IRI="#Fribourg"/>
+        <NamedIndividual IRI="#MarketPublic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#site"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+        <NamedIndividual IRI="#Nyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+        <NamedIndividual IRI="#Revit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calculates"/>
+        <NamedIndividual IRI="#Mathieu"/>
+        <NamedIndividual IRI="#Environnement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lives"/>
+        <NamedIndividual IRI="#Mathieu"/>
+        <NamedIndividual IRI="#Fribourg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#workOn"/>
+        <NamedIndividual IRI="#Mathieu"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lives"/>
+        <NamedIndividual IRI="#Olivia"/>
+        <NamedIndividual IRI="#Léchelles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#workOn"/>
+        <NamedIndividual IRI="#Olivia"/>
+        <NamedIndividual IRI="#TourEsplanade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#lives"/>
+        <NamedIndividual IRI="#Piero"/>
+        <NamedIndividual IRI="#Nyon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#method"/>
+        <NamedIndividual IRI="#Price1"/>
+        <NamedIndividual IRI="#MarketPrivate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#method"/>
+        <NamedIndividual IRI="#Price2"/>
+        <NamedIndividual IRI="#MarketPublic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#conduct"/>
+        <NamedIndividual IRI="#Structure"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#conduct"/>
+        <NamedIndividual IRI="#Structure"/>
+        <NamedIndividual IRI="#TourEsplanade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located"/>
+        <NamedIndividual IRI="#Structure"/>
+        <NamedIndividual IRI="#Fribourg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#site"/>
+        <NamedIndividual IRI="#TourEsplanade"/>
+        <NamedIndividual IRI="#Fribourg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use"/>
+        <NamedIndividual IRI="#TourEsplanade"/>
+        <NamedIndividual IRI="#Autocad"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Autocad"/>
+        <Literal>2D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#software"/>
+        <NamedIndividual IRI="#Autocad"/>
+        <Literal>Autocad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#step"/>
+        <NamedIndividual IRI="#BeforeProject"/>
+        <Literal>Before-Project</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#version"/>
+        <NamedIndividual IRI="#BeforeProject"/>
+        <Literal>Final</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstname"/>
+        <NamedIndividual IRI="#David"/>
+        <Literal>David</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastname"/>
+        <NamedIndividual IRI="#David"/>
+        <Literal>Amsler</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#Environnement"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0332568954</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#secteurs"/>
+        <NamedIndividual IRI="#Environnement"/>
+        <Literal>Environnement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#step"/>
+        <NamedIndividual IRI="#Execution"/>
+        <Literal>Execution</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#version"/>
+        <NamedIndividual IRI="#Execution"/>
+        <Literal>Provisional</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locality"/>
+        <NamedIndividual IRI="#Fribourg"/>
+        <Literal>Fribourg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postalCode"/>
+        <NamedIndividual IRI="#Fribourg"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locality"/>
+        <NamedIndividual IRI="#Genève"/>
+        <Literal>Genève</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postalCode"/>
+        <NamedIndividual IRI="#Genève"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5342</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#LesPillettes"/>
+        <Literal>Les Pillettes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locality"/>
+        <NamedIndividual IRI="#Léchelles"/>
+        <Literal>Léchelles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postalCode"/>
+        <NamedIndividual IRI="#Léchelles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1773</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#market"/>
+        <NamedIndividual IRI="#MarketPrivate"/>
+        <Literal>Private</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#MarketPrivate"/>
+        <Literal>Flate rate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#market"/>
+        <NamedIndividual IRI="#MarketPublic"/>
+        <Literal>Public</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#MarketPublic"/>
+        <Literal>Unit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstname"/>
+        <NamedIndividual IRI="#Mathieu"/>
+        <Literal>Mathieu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastname"/>
+        <NamedIndividual IRI="#Mathieu"/>
+        <Literal>Curti</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locality"/>
+        <NamedIndividual IRI="#Nyon"/>
+        <Literal>Nyon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#postalCode"/>
+        <NamedIndividual IRI="#Nyon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1260</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstname"/>
+        <NamedIndividual IRI="#Olivia"/>
+        <Literal>Olivia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastname"/>
+        <NamedIndividual IRI="#Olivia"/>
+        <Literal>Guedia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstname"/>
+        <NamedIndividual IRI="#Piero"/>
+        <Literal>Piero</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastname"/>
+        <NamedIndividual IRI="#Piero"/>
+        <Literal>Fonzo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#currencie"/>
+        <NamedIndividual IRI="#Price1"/>
+        <Literal>CHF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#total"/>
+        <NamedIndividual IRI="#Price1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#currencie"/>
+        <NamedIndividual IRI="#Price2"/>
+        <Literal>CHF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#total"/>
+        <NamedIndividual IRI="#Price2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Revit"/>
+        <Literal>BIM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#software"/>
+        <NamedIndividual IRI="#Revit"/>
+        <Literal>Revit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#Structure"/>
+        <Literal>026 652 98 56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#secteurs"/>
+        <NamedIndividual IRI="#Structure"/>
+        <Literal>Structure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#TourEsplanade"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3903</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TourEsplanade"/>
+        <Literal>Tour Esplanade</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#calculates"/>
+        <ObjectProperty IRI="#workFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#responsible"/>
+        <ObjectProperty IRI="#workFor"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#calculates"/>
+        <Class IRI="#Engineer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#conduct"/>
+        <Class IRI="#Departement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cost"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#lives"/>
+        <Class IRI="#Engineer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#lives"/>
+        <Class IRI="#ProjectManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located"/>
+        <Class IRI="#Departement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#method"/>
+        <Class IRI="#DeterminingCost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#responsible"/>
+        <Class IRI="#ProjectManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#site"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#state"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#use"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#workFor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#workOn"/>
+        <Class IRI="#Engineer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#calculates"/>
+        <Class IRI="#Departement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#conduct"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cost"/>
+        <Class IRI="#DeterminingCost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#lives"/>
+        <Class IRI="#PostalAdress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#located"/>
+        <Class IRI="#PostalAdress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#method"/>
+        <Class IRI="#Contract"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#responsible"/>
+        <Class IRI="#Departement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#site"/>
+        <Class IRI="#PostalAdress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#state"/>
+        <Class IRI="#Phase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#use"/>
+        <Class IRI="#Technologies"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#workFor"/>
+        <Class IRI="#Organzation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#workOn"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#currencie"/>
+        <Class IRI="#DeterminingCost"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Technologies"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstname"/>
+        <Class IRI="#Engineer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstname"/>
+        <Class IRI="#ProjectManager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastname"/>
+        <Class IRI="#Engineer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastname"/>
+        <Class IRI="#ProjectManager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#locality"/>
+        <Class IRI="#PostalAdress"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#market"/>
+        <Class IRI="#Contract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phone"/>
+        <Class IRI="#Departement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#postalCode"/>
+        <Class IRI="#PostalAdress"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#secteurs"/>
+        <Class IRI="#Departement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#software"/>
+        <Class IRI="#Technologies"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#step"/>
+        <Class IRI="#Phase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#total"/>
+        <Class IRI="#DeterminingCost"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#Contract"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#version"/>
+        <Class IRI="#Phase"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#currencie"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#firstname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#locality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#market"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#postalCode"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#software"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#step"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#total"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#version"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
